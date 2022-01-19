@@ -1,4 +1,3 @@
-import { async } from 'regenerator-runtime';
 import { TIMEOUT_SECONDS } from './config';
 
 export const AJAX = async function (url, recipe = undefined) {

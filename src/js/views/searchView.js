@@ -1,5 +1,3 @@
-import View from './view';
-import icons from 'url:../../img/icons.svg';
 class SeachView {
   _parentElement = document.querySelector('.search');
   getQuery() {

@@ -1,9 +1,7 @@
-import { initial } from 'lodash-es';
-import object from 'lodash-es/object';
-import { async } from 'regenerator-runtime';
 import { API_KEY, API_URL } from './config';
 import { RESULTS_PER_PAGE } from './config';
 import { AJAX, getJSON, sendJSON } from './helpers';
+
 export const state = {
   recipe: {},
   search: {
