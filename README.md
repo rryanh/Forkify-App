@@ -119,12 +119,12 @@ To get a local copy up and running follow these example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] verify Installation steps
+- [ ] Verify Installation steps
 - [ ] Display number of pages when viewing search results
 - [ ] Ability to sort search results
-    - [ ] duration / number ingredients / nutrition
+    - [ ] Duration / Number of ingredients / Nutrition
 - [ ] Shopping List
-    - [ ] add / edit / print
+    - [ ] Add / Edit / Print
 - [ ] Weekly meal planning
 - [ ] Get nutrition data
 
