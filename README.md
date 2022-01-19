@@ -119,7 +119,7 @@ To get a local copy up and running follow these example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Verify Installation steps
+- [ ] Verify installation steps
 - [ ] Display number of pages when viewing search results
 - [ ] Ability to sort search results
     - [ ] Duration / Number of ingredients / Nutrition
