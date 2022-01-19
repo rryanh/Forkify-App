@@ -1,13 +1,13 @@
-import * as model from './model.js';
-import { MODAL_CLOSE_SEC } from './config.js';
-import recipeView from './views/recipeView.js';
-import searchview from './views/searchView.js';
-import resultsView from './views/resultsView.js';
+import * as model from './model';
+import { MODAL_CLOSE_SEC } from './config';
+import recipeView from './views/recipeView';
+import searchview from './views/searchView';
+import resultsView from './views/resultsView';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import paginationView from './views/paginationView.js';
-import bookmarksView from './views/bookmarksView.js';
-import addRecipeView from './views/addRecipeView.js';
+import paginationView from './views/paginationView';
+import bookmarksView from './views/bookmarksView';
+import addRecipeView from './views/addRecipeView';
 // if (module.hot) {
 //   module.hot.accept();
 // }
