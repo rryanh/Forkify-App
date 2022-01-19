@@ -151,7 +151,7 @@ Project Link: [Here](https://github.com/rryanh/Forkify-App)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Jonas schmedtman](https://twitter.com/jonasschmedtman)
+* [Jonas Schmedtman](https://twitter.com/jonasschmedtman)
 * [Othneil Drew](https://github.com/othneildrew/Best-README-Template)
 
 
