@@ -8,7 +8,6 @@ import 'regenerator-runtime/runtime';
 import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
-import { Renderer } from 'leaflet';
 // if (module.hot) {
 //   module.hot.accept();
 // }
