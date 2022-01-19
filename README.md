@@ -90,7 +90,7 @@ Here we put everything we have learned into one project:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these example steps.
 
 ### Prerequisites
 
@@ -152,6 +152,7 @@ Project Link: [Here](https://github.com/rryanh/Forkify-App)
 ## Acknowledgments
 
 * [Jonas schmedtman](https://twitter.com/jonasschmedtman)
+* [Othneil Drew](https://github.com/othneildrew/Best-README-Template)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
