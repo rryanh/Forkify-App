@@ -7,6 +7,7 @@ class AddRecipeView extends View {
   _btnOpen = document.querySelector('.nav__btn--add-recipe');
   _btnClose = document.querySelector('.btn--close-modal');
   _succesMsg = 'Recipe Uploaded!';
+
   constructor() {
     super();
     this._addHandlerShowWindow();

@@ -80,7 +80,6 @@ const persistBookmarks = function () {
 
 export const addBookmark = function (recipe) {
   state.bookmarks.push(recipe);
-  console.log(recipe, state.recipe);
   if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;
 
   persistBookmarks();
@@ -97,8 +96,7 @@ export const deleteBookmark = function (id) {
 
 export const uploadRecipe = async function (newRecipe) {
   try {
-    const ingredients = object
-      .entries(newRecipe)
+    const ingredients = Object.entries(newRecipe)
       .filter(entry => entry[0].startsWith('ingredient') && entry[1] !== '')
       .map(ing => {
         ingArr = ing[1].split(',').map(el => el.trim());
@@ -123,7 +121,6 @@ export const uploadRecipe = async function (newRecipe) {
 
     const data = await AJAX(`${API_URL}?key=${API_KEY}`, uploadRecipe);
     const { recipe } = data;
-    console.log(recipe);
     state.recipe = createRecipeObject(recipe);
     addBookmark(state.recipe);
   } catch (error) {
@@ -133,7 +130,7 @@ export const uploadRecipe = async function (newRecipe) {
 
 const init = function () {
   const bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
-  console.log(bookmarks);
+
   if (bookmarks) state.bookmarks = bookmarks;
 };
 init();
