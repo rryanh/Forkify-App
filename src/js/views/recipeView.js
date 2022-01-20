@@ -126,6 +126,7 @@ class RecipeView extends View {
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
+
   addHandlerUpdateServings(handler) {
     document;
 
