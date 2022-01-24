@@ -1,5 +1,6 @@
 import icons from 'url:../../img/icons.svg';
 import View from './view';
+import frac from 'frac';
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
@@ -106,22 +107,21 @@ class RecipeView extends View {
       <svg class="recipe__icon">
         <use href="${icons}#icon-check"></use>
       </svg>
-      <div class="recipe__quantity">${ing}</div>
+      <div class="recipe__quantity">${this._getFraction(ing)}</div>
       <div class="recipe__description">
         <span class="recipe__unit">${ing.unit}</span>
         ${ing.description}
       </div>
     </li>`;
   }
-  // _getFraction(ing) {
-  //   const fraction = ing.quantity ? new Fraction(ing.quantity).toString() : '';
-  //   //const fraction = ing.quantity ? ing.quantity : '';
-  //   return fraction === '33/100'
-  //     ? '1/3'
-  //     : fraction === '67/100'
-  //     ? '2/3'
-  //     : fraction;
-  // }
+  _getFraction(ing) {
+    if (!ing.quantity) return '';
+    const fraction = frac(ing.quantity, 10, true);
+
+    if (fraction[0] === 0) return `${fraction[1]}/${fraction[2]}`;
+    if (fraction[1] === 0) return `${fraction[0]}`;
+    return `${fraction[0]} ${fraction[1]}/${fraction[2]}`;
+  }
 
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
